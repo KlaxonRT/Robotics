@@ -1,0 +1,14 @@
+<!--
+I have neither given nor received any unauthorized aid in completing this work,
+nor have I presented someone else's work as my own
+Name: Austin Placinto
+Date: 2/5/2020 
+-->
+
+<launch>
+    <param name="/color" type="string" value="/red_led" />
+    <node name="led_control" pkg="my_ros_tutorials" type="led_control" />
+    <include file="$(find tiny_keyboard_reader)/launch/keyboard_reader.launch" />
+    <!--<include file="$(find prizm_ros)/launch/led_sim.launch" />-->
+    <include file="$(find prizm_ros)/launch/prizm.launch" />
+</launch>

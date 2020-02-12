@@ -1,0 +1,14 @@
+<!--
+I have neither given nor received any unauthorized aid in completing this work,
+nor have I presented someone else's work as my own
+Name: Austin Placinto
+Date: 2/5/2020 
+-->
+
+<launch>
+    <param name="/hw2_pub_freq" type="double" value="1" />
+    <node name="hw2str_pub" pkg="my_ros_tutorials" type="hw2str_pub" />
+    <node name="hw2str_changer" pkg="my_ros_tutorials" type="hw2str_changer" />
+    <node name="hw2str_sub" pkg="my_ros_tutorials" type="hw2str_sub"
+          output="screen" launch-prefix="gnome-terminal -e" />
+</launch>

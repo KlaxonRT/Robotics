@@ -1,0 +1,9 @@
+<!--I have neither given nor received any unauthorized aid in completing this work,
+nor have I presented someone else's work as my own.
+Name: Austin Placinto
+Date: 2/12/2020-->
+<launch>
+    <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" />
+    <node name="input_xy_node" pkg="my_ros_tutorials" type="input_xy_node" output="screen" />
+    <node name="go2xy_node" pkg="my_ros_tutorials" type="go2xy_node" />
+</launch>
